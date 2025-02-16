@@ -25,5 +25,8 @@ Repositorio para almacenar y tener un historial de versiones del código para Pr
 - En la parte del **código**, debemos desarrollar el **MENÚ PRINCIPAL** para ejecutar las acciones.
 
 ## Integrantes del equipo y su rol
-- **José Pedro Valenzuela López** → Diseñador del GitHub
+- **José Pedro Valenzuela López** → Diseñador del GitHub y manager
+- **Emiliano Becerra** → Diagrama de flujo
+- **Grecia Daniela Valdivia Rubio** → Diagrama de flujo
+- **Naomi Jiménez Toscano** → Diagrama de flujo
 
