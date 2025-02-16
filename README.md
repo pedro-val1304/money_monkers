@@ -19,10 +19,10 @@ Repositorio para almacenar y tener un historial de versiones del código para Pr
 9. Generar un **reporte de _notas_** de un estudiante en específico.
 10. Generar un **reporte de _asistencia_** de un estudiante en específico.
 
-## ¿Qué hacer por ahora?
-- La prioridad debe ser **REALIZAR EL DIAGRAMA** de cómo funcionará el código. Luego, debemos pasarlo a revisión grupal.  
-  - **Fecha de entrega:** 18 de febrero  
+## ¿Qué hacer por ahora?  
 - En la parte del **código**, debemos desarrollar el **MENÚ PRINCIPAL** para ejecutar las acciones.
+- Empezar a realizar **las primeras opciones** del menú.
+- Definir sí vamos a usar **listas o diccionarios**.
 
 ## Integrantes del equipo y su rol
 - **José Pedro Valenzuela López** → Diseñador del GitHub y manager
