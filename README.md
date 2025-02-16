@@ -29,4 +29,6 @@ Repositorio para almacenar y tener un historial de versiones del código para Pr
 - **Emiliano Becerra** → Diagrama de flujo
 - **Grecia Daniela Valdivia Rubio** → Diagrama de flujo
 - **Naomi Jiménez Toscano** → Diagrama de flujo
-
+- **Pedro Daniel** → Programador del menú principal
+- **Misael** → Programador de almacenamiento de calificaciones
+- **Gloria Millet** → Base de datos de estudiantes
