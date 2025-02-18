@@ -1,6 +1,6 @@
 surList = ["Becerra", "Facio", "Jimenez", "Rodriguez", "Gutierrez", "Valenzuela", "Vidrio", "Mora", "Valdivia", "Ibarra", "Ornelas", "Zepeda", "Granados", "Alvarez"]
 codeList = ["224164515", "219439208", "220520973", "221925365", "221453145", "221568619", "224164513", "221964573", "216548448", "224164491", " 218466716", "220571586", " 218220776","221851264"]
-nameList = ["EMILIANO", "ALLISON","NAOMI","NATALIA","PEDRO","JOSE","DIEGO","ABRIL","GRECIA","MISAEL","ALBERTO","ELIAS","ANGEL, "GLORIA"]
+nameList = ["Emiliano", "Allison","Naomi","Natalia","Pedro","Jose","Diego", "Abril","Grecia","Misael","Alberto","Elias","Angel", "Gloria"]
 pList = [80, 90] #Programación
 fList = [60, 100] #Física
 qList = [70, 80] #Química
@@ -10,12 +10,12 @@ absList = [2, 1] #Faltas
 ageList = [19, 20] #Edad
 carList = ["LTBI", "LTBI"] #Carrera
 
-borrar=str
+borrar = str
 caP = float
-caf=float
+caf = float
 caQ = float
 caC = float
-Pro = float
+med = float
 mod = int
 asis = int
 
@@ -209,25 +209,25 @@ while True:
                 caF = fList[nameList.index(ident)]
                 caQ = qList[nameList.index(ident)]
                 caC = cList[nameList.index(ident)]
-                Pro = (caP+caF+caQ+caC)/4
+                med = (caP+caF+caQ+caC)/4
                 print("El promedio de", nameList[nameList.index(ident)], surList[nameList.index(ident)], "es:") 
-                print(Pro)
+                print(med)
             elif ident in surList:
                 caP = pList[surList.index(ident)]
                 caF = fList[surList.index(ident)]
                 caQ = qList[surList.index(ident)]
                 caC = cList[surList.index(ident)]
-                Pro = (caP+caF+caQ+caC)/4
+                med = (caP+caF+caQ+caC)/4
                 print("El promedio de", nameList[surList.index(ident)], surList[surList.index(ident)], "es:")
-                print(Pro)    
+                print(med)    
             elif ident in codeList:
                 caP = pList[codeList.index(ident)]
                 caF = fList[codeList.index(ident)]
                 caQ = qList[codeList.index(ident)]
                 caC = cList[codeList.index(ident)]
-                Pro = (caP+caF+caQ+caC)/4
+                med = (caP+caF+caQ+caC)/4
                 print("El promedio de", nameList[codeList.index(ident)], surList[codeList.index(ident)], "es:")
-                print(Pro)
+                print(med)
             else:
                 print("El estudiante no se encuentra en la lista")
 
@@ -282,7 +282,7 @@ while True:
             if ident in nameList:
                 print("Reporte de asistencias del estudiante:", nameList[nameList.index(ident)], surList[nameList.index(ident)])
                 print("Sus asistencias son:", asisList[nameList.index(ident)])
-                print("Sus faltas son: ", absList[nameList.index(ident)])
+                print("Sus faltas son:", absList[nameList.index(ident)])
             elif ident in surList:
                 print("Reporte de asistencias del estudiante:", nameList[surList.index(ident)], surList[surList.index(ident)])
                 print("Sus asistencias son:", asisList[surList.index(ident)])
@@ -302,4 +302,3 @@ while True:
     except ValueError:
         print("Elija un valor valido")
         print("---------------------------------------------------------------------")
-
