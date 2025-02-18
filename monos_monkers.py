@@ -1,5 +1,5 @@
-nameList = ["Emiliano", "Allison"]
-surList = ["Becerra", "Facio"]
+nameList = ["Emiliano", "Allison","Naomi","Natalia","Pedro","Jose","Diego", "Abril","Grecia","Misale","Alberto","Elias","Angel"]
+surList = ["Becerra", "Facio",]
 codeList = ["224164515", "219439208"]
 pList = [80, 90] #Programación
 fList = [60, 100] #Física
