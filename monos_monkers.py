@@ -1,6 +1,6 @@
 surList = ["Becerra", "Facio", "Jimenez", "Rodriguez", "Gutierrez", "Valenzuela", "Vidrio", "Mora", "Valdivia", "Ibarra", "Ornelas", "Zepeda", "Granados", "Alvarez"]
 codeList = ["224164515", "219439208", "220520973", "221925365", "221453145", "221568619", "224164513", "221964573", "216548448", "224164491", " 218466716", "220571586", " 218220776","221851264"]
-nameList = ["Emiliano", "Allison","Naomi","Natalia","Pedro","Jose","Diego", "Abril","Grecia","Misael","Alberto","Elias","Angel", "Gloria"]
+nameList = ["EMILIANO", "ALLISON","NAOMI","NATALIA","PEDRO","JOSE","DIEGO","ABRIL","GRECIA","MISAEL","ALBERTO","ELIAS","ANGEL, "GLORIA"]
 pList = [80, 90] #Programación
 fList = [60, 100] #Física
 qList = [70, 80] #Química
