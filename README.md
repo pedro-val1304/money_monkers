@@ -32,6 +32,5 @@ Repositorio para almacenar y tener un historial de versiones del código para Pr
 - **Pedro Daniel** → Programador del menú principal
 - **Misael** → Programador de almacenamiento de calificaciones
 - **Gloria Millet** → Base de datos de estudiantes
+- **Alberto Ornelas** → Diagrama de flujo
 - **Allison Magaly Sanchez Facio** → Diagrama de flujo
-- Alberto Ornelas → Diagrama de flujo
-- 
