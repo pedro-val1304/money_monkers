@@ -7,9 +7,8 @@ qList = [70, 80, 100, 90, 100, 90, 100, 90, 100,90, 100, 90, 100, 100] #Química
 cList = [90, 70] #CB
 asisList = [15, 16] #Asistencia
 absList = [2, 1] #Faltas
-ageList = [19, 20] #Edad
+ageList = [19, 20, 22, 18, 18, 18, 19, 18, 24, 18, 21, 19, 22, 18] #Edad
 carList = ["LTBI", "LTBI"] #Carrera
-
 borrar=str
 caP = float
 caf=float
