@@ -8,7 +8,7 @@ cList = [90, 70] #CB
 asisList = [15, 16] #Asistencia
 absList = [2, 1, 0, 1, 0, 3, 4, 1, 0, 0, 1, 1, 1, 0] #Faltas
 ageList = [19, 20] #Edad
-carList = ["LTBI", "LTBI"] #Carrera
+carList = ["LTBI", "LTBI","LTBI", "LTBI","LTBI","LTBI","LTBI","LTBI","LTBI","LTBI","LTBI","LTBI","LTBI","LTBI"] #Carrera
 
 borrar=str
 caP = float
