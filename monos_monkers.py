@@ -1,6 +1,6 @@
 nameList = ["Emiliano", "Allison"]
-surList = ["Becerra", "Facio"]
-codeList = ["224164515", "219439208"]
+surList = ["Becerra", "Facio","Naomi","]
+codeList = ["224164515", "219439208", "220520973","22156819", ]
 pList = [80, 90] #Programación
 fList = [60, 100] #Física
 qList = [70, 80] #Química
