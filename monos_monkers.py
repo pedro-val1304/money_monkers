@@ -6,7 +6,7 @@ fList = [60, 100] #Física
 qList = [70, 80, 100, 90, 100, 90, 100, 90, 100,90, 100, 90, 100, 100] #Química
 cList = [90, 70] #CB
 asisList = [15, 16] #Asistencia
-absList = [2, 1] #Faltas
+absList = [2, 1, 0, 1, 0, 3, 4, 1, 0, 0, 1, 1, 1, 0] #Faltas
 ageList = [19, 20] #Edad
 carList = ["LTBI", "LTBI"] #Carrera
 
