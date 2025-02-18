@@ -1,4 +1,4 @@
-surList = ["Becerra", "Facio", "Jimenez", "Rodriguez", "Gutierrez", "Valenzuela", "Vidrio", "Mora", "Valdivia", "Ibarra", "Ornelas", "Zepeda", "Granados", "Alvarez"]
+surList = ["BECERRA", "FACIO", "JIMENEZ", "RODRIGUEZ", "GUTIERREZ", "VALENZUELA", "VIDRIO", "MORA", "VALDIVIA", "IBARRA", "ORNELAS", "ZEPEDA", "GRANADOS", "ALVAREZ"]
 codeList = ["224164515", "219439208", "220520973", "221925365", "221453145", "221568619", "224164513", "221964573", "216548448", "224164491", " 218466716", "220571586", " 218220776","221851264"]
 nameList = ["Emiliano", "Allison","Naomi","Natalia","Pedro","Jose","Diego", "Abril","Grecia","Misael","Alberto","Elias","Angel", "Gloria"]
 pList = [80, 90] #Programación
