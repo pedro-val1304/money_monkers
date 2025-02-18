@@ -11,7 +11,7 @@ ageList = [19, 20, 22, 18, 18, 18, 19, 18, 24, 18, 21, 19, 22, 18] #Edad
 carList = ["LTBI", "LTBI"] #Carrera
 # alberto-ornelas-patch-1
 
-borrar=str
+borrar = str
 caP = float
 caf = float
 caQ = float
