@@ -5,10 +5,10 @@ pList = [80, 90] #Programación
 fList = [60, 100] #Física
 qList = [70, 80] #Química
 cList = [90, 70] #CB
-asisList = [15, 16]
-absList = [2, 1]
-ageList = [19, 20]
-carList = ["LTBI", "LTBI"]
+asisList = [15, 16] #Asistencia
+absList = [2, 1] #Faltas
+ageList = [19, 20] #Edad
+carList = ["LTBI", "LTBI"] #Carrera
 
 borrar=str
 caP = float
@@ -37,7 +37,7 @@ while True:
 
     #Agregar nuevo 1
         if opcion == 1:
-            nameList.append(str(input("Ingrese su nombre: ")))
+            nameList.append(str(input("Ingrese su nombre: "))) #Lo que hace esto es que va a guardar todo en la posición que sigue, en este caso 2.
             surList.append(str(input("Ingrese su apellido: ")))
             codeList.append(str(input("Ingrese su código: ")))
             ageList.append(str(input("Ingrese su edad: ")))
@@ -53,9 +53,9 @@ while True:
         elif opcion == 2:
             ident = input("Ingresa el identificador: ")
             if ident in nameList:
-                 print("Su nombre es:", nameList[nameList.index(ident)])
-                 print("Su apellido es:", surList[nameList.index(ident)])
-                 print("Su código es:", codeList[nameList.index(ident)])
+                 print("Su nombre es:", nameList[nameList.index(ident)]) #nameList[nameList.index(ident)] Hace que en la lista de nombres se imprima el de la posición del nombre o código que se pone
+                 print("Su apellido es:", surList[nameList.index(ident)]) #ident es la variable que se utiliza para saber la posición en la que está el input. Osea, allison es la posición 1
+                 print("Su código es:", codeList[nameList.index(ident)]) # entonces se va a imprimir todo lo de las bases de datos de la posición 1
                  print("Su edad es:", ageList[nameList.index(ident)])
                  print("Su carrera es:", carList[nameList.index(ident)])
             elif ident in surList:
@@ -129,9 +129,9 @@ while True:
             ident = input("Ingresa el identificador: ")
             if ident in nameList:
                 mod=nameList.index(ident)
-                nameList[mod]=input(str("Ingrese nuevo nombre: "))
-                surList[mod]=input(str("Ingrese nuevo apellido: "))
-                codeList[mod]=input(str("Ingrese nuevo código: "))
+                nameList[mod]=input(str("Ingrese nuevo nombre: ")) #Va a modificar todo lo de la posicón en la que esta el ident. Mod es una variable que se iguala a la posición en la
+                surList[mod]=input(str("Ingrese nuevo apellido: ")) #que se encuentra el ident. Es decir, si el input esta en la posición 2, se van a modificar todas las listas
+                codeList[mod]=input(str("Ingrese nuevo código: ")) #en la posición 2. Se va a modificar la carrera de la posición 2, el nombre de la posición 2 y todas las listas de la posición 2
                 ageList[mod]=input(int("Ingrese su nueva edad: "))
                 carList[mod]=input(str("Ingrese su nueva carrera: "))
                 pList[mod]=float(input("Ingrese nueva calificación de Programación 1: "))
@@ -205,7 +205,7 @@ while True:
         elif opcion == 7:
             ident = input("Ingresa el identificador: ")
             if ident in nameList:
-                caP = pList[nameList.index(ident)]
+                caP = pList[nameList.index(ident)] #Aquí son variables que se igualan a la calificación, definida por la posición en la que el ident encuentra. Como ha estado funcionando el código en general
                 caF = fList[nameList.index(ident)]
                 caQ = qList[nameList.index(ident)]
                 caC = cList[nameList.index(ident)]
