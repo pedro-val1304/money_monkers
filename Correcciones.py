@@ -10,9 +10,9 @@ absList = [2, 1] #Faltas
 ageList = [19, 20] #Edad
 carList = ["LTBI", "LTBI"] #Carrera
 
-borrar=str
+borrar = str
 caP = float
-caf=float
+caf = float
 caQ = float
 caC = float
 med = float
