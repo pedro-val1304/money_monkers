@@ -8,7 +8,7 @@ cList = [90, 70, 95, 73, 90, 100, 55, 69, 100, 100, 84, 89, 88, 90] #CB
 asisList = [15, 16, 20, 17, 19, 15, 15, 20, 18, 10, 20, 16, 20, 19] #Asistencia
 absList = [2, 1, 0, 1, 0, 3, 4, 1, 0, 0, 1, 1, 1, 0] #Faltas
 ageList = [19, 20, 22, 18, 18, 18, 19, 18, 24, 18, 21, 19, 22, 18] #Edad
-carList = ["LTBI", "LCD", "LDIA", "LCS", "LIF"] #Carrera
+carList = ["LTBI", "LCD", "LDIA", "LCS", "LIF"] #Carrera+
 # alberto-ornelas-patch-1
 
 borrar = str
@@ -39,11 +39,11 @@ while True:
 
         #Agregar nuevo 1
             if opcion == 1:
-                nameList.append(str(input("Ingrese su nombre: ")).upper) #Lo que hace esto es que va a guardar todo en la posición que sigue, en este caso 2.
-                surList.append(str(input("Ingrese su apellido: ")).upper)
+                nameList.append(str(input("Ingrese su nombre: ")).upper()) #Lo que hace esto es que va a guardar todo en la posición que sigue, en este caso 2.
+                surList.append(str(input("Ingrese su apellido: ")).upper())
                 codeList.append(str(input("Ingrese su código: ")))
                 ageList.append(str(input("Ingrese su edad: ")))
-                carList.append(str(input("Ingrese su carrera (LTBI, LCD, LDIA, LCS, LIF): ")).upper)
+                carList.append(str(input("Ingrese su carrera (LTBI, LCD, LDIA, LCS, LIF): ")).upper())
                 pList.append(float(input("Ingrese su calificación de Programación 1: ")))
                 fList.append(float(input("Ingrese su calificación de Física: ")))
                 qList.append(float(input("Ingrese su calificación de Química: ")))
@@ -53,7 +53,7 @@ while True:
 
         #Identificar 2
             elif opcion == 2:
-                ident = input("Ingresa el identificador: ")
+                ident = input("Ingresa el identificador: ").upper()
                 if ident in nameList:
                      print("Su nombre es:", nameList[nameList.index(ident)]) #nameList[nameList.index(ident)] Hace que en la lista de nombres se imprima el de la posición del nombre o código que se pone
                      print("Su apellido es:", surList[nameList.index(ident)]) #ident es la variable que se utiliza para saber la posición en la que está el input. Osea, allison es la posición 1
@@ -77,7 +77,7 @@ while True:
 
         #Eliminar 3
             elif opcion == 3:
-                ident = input("Ingresa el identificador: ")
+                ident = input("Ingresa el identificador: ").upper()
                 if ident in nameList: #Si el input esta en la lista de nombres, entonces arrancar el programa
                     print("El estudiante:", nameList[nameList.index(ident)], surList[nameList.index(ident)], "ha sido borrado")
                     borrar = nameList.index(ident) #Esta variable se iguala al de la posición de la lista en la que ident se encuentra, es decir. Si ident encuentra a Emiliano en la posición 0, borrar sera igual a 0 y por ende borrara todos los valores de toda la lista en la posición 0
@@ -128,14 +128,14 @@ while True:
 
         #Modificar 4
             elif opcion == 4:
-                ident = input("Ingresa el identificador: ")
+                ident = input("Ingresa el identificador: ").upper()
                 if ident in nameList: #Funciona igual en todos los programas
                     mod=nameList.index(ident)
-                    nameList[mod]=input(str("Ingrese nuevo nombre: ").upper) #Va a modificar todo lo de la posicón en la que esta el ident. Mod es una variable que se iguala a la posición en la
-                    surList[mod]=input(str("Ingrese nuevo apellido: ").upper) #que se encuentra el ident. Es decir, si el input esta en la posición 2, se van a modificar todas las listas
+                    nameList[mod]=input(str("Ingrese nuevo nombre: ").upper()) #Va a modificar todo lo de la posicón en la que esta el ident. Mod es una variable que se iguala a la posición en la
+                    surList[mod]=input(str("Ingrese nuevo apellido: ").upper()) #que se encuentra el ident. Es decir, si el input esta en la posición 2, se van a modificar todas las listas
                     codeList[mod]=input(str("Ingrese nuevo código: ")) #en la posición 2. Se va a modificar la carrera de la posición 2, el nombre de la posición 2 y todas las listas de la posición 2
                     ageList[mod]=input(int("Ingrese su nueva edad: "))
-                    carList[mod]=input(str("Ingrese su nueva carrera: ").upper)
+                    carList[mod]=input(str("Ingrese su nueva carrera: ").upper())
                     pList[mod]=float(input("Ingrese nueva calificación de Programación 1: "))
                     fList[mod]=float(input("Ingrese nueva calificación de Física: "))
                     qList[mod]=float(input("Ingrese nueva calificación de Química: "))
@@ -144,11 +144,11 @@ while True:
                     absList[mod]=int(input("Ingrese nuevas faltas: "))
                 elif ident in surList:
                     mod=surList.index(ident)
-                    nameList[mod]=input(str("Ingrese nuevo nombre: ").upper) #Lo mismo, pero busca la posición en la lista de apellidos, es decir, si becerra esta en la posición 0, se van a modificar la posición 0 de todas las listas
-                    surList[mod]=input(str("Ingrese nuevo apellido: ").upper)
+                    nameList[mod]=input(str("Ingrese nuevo nombre: ").upper()) #Lo mismo, pero busca la posición en la lista de apellidos, es decir, si becerra esta en la posición 0, se van a modificar la posición 0 de todas las listas
+                    surList[mod]=input(str("Ingrese nuevo apellido: ").upper())
                     codeList[mod]=input(str("Ingrese nuevo código: "))
                     ageList[mod]=input(int("Ingrese su nueva edad: "))
-                    carList[mod]=input(str("Ingrese su nueva carrera: ").upper)
+                    carList[mod]=input(str("Ingrese su nueva carrera: ").upper())
                     pList[mod]=float(input("Ingrese nueva calificación de Programación 1: "))
                     fList[mod]=float(input("Ingrese nueva calificación de Física: "))
                     qList[mod]=float(input("Ingrese nueva calificación de Química: "))
@@ -157,11 +157,11 @@ while True:
                     absList[mod]=int(input("Ingrese nuevas faltas: "))
                 elif ident in codeList:
                     mod=codeList.index(ident)
-                    nameList[mod]=input(str("Ingrese nuevo nombre: ").upper) #Lo mismo, pero en el código
-                    surList[mod]=input(str("Ingrese nuevo apellido: ").upper)
+                    nameList[mod]=input(str("Ingrese nuevo nombre: ").upper()) #Lo mismo, pero en el código
+                    surList[mod]=input(str("Ingrese nuevo apellido: ").upper())
                     codeList[mod]=input(str("Ingrese nuevo código: "))
                     ageList[mod]=input(int("Ingrese su nueva edad: "))
-                    carList[mod]=input(str("Ingrese su nueva carrera: ").upper)
+                    carList[mod]=input(str("Ingrese su nueva carrera: ").upper())
                     pList[mod]=float(input("Ingrese nueva calificación de Programación 1: "))
                     fList[mod]=float(input("Ingrese nueva calificación de Física: "))
                     qList[mod]=float(input("Ingrese nueva calificación de Química: "))
@@ -178,7 +178,7 @@ while True:
                 
         #Almacenar calificaciones 6
             elif opcion == 6:
-                ident = input("Ingresa el identificador: ")
+                ident = input("Ingresa el identificador: ").upper()
                 if ident in nameList:
                     mod=nameList.index(ident) #Es una variable que se va a igualar a la posición en la que ident encuentre a su simil. Es decir, el usuario pone Emiliano, Emiliano en la lista esta en la posición 0. Mod se va a igualar a 0
                     print("Almacenando calificaciones del estudiante:", nameList[nameList.index(ident)], surList[nameList.index(ident)])
@@ -205,7 +205,7 @@ while True:
                     
         #Promedio de estudiante 7
             elif opcion == 7:
-                ident = input("Ingresa el identificador: ")
+                ident = input("Ingresa el identificador: ").upper()
                 if ident in nameList:
                     caP = pList[nameList.index(ident)] #Aquí son variables que se igualan a la calificación, definida por la posición en la que el ident encuentra. Como ha estado funcionando el código en general
                     caF = fList[nameList.index(ident)]
@@ -235,7 +235,7 @@ while True:
 
         #Generar reporte 8
             elif opcion == 8:
-                ident = input("Ingresa el identificador: ")
+                ident = input("Ingresa el identificador: ").upper()
                 if ident in nameList:
                     print("Reporte de calificaciones del estudiante:", nameList[nameList.index(ident)], surList[nameList.index(ident)]) #Funciona igual que lo que dice abajo
                     print("Su calificación de programación 1 es:", pList[nameList.index(ident)]) #Va a buscar en la lista de calificaciones de programación, que valor esta en la posición en la que esta ident, es decir, si ident es igual a Emiliano y  
@@ -259,7 +259,7 @@ while True:
 
         #Asistencia 9
             elif opcion == 9:
-                ident = input("Ingresa el identificador: ") #Fuunciona igual que las calificaciones
+                ident = input("Ingresa el identificador: ").upper() #Fuunciona igual que las calificaciones
                 if ident in nameList:
                     asis=nameList.index(ident)
                     print("Almacenando asistencias del estudiante:", nameList[nameList.index(ident)], surList[nameList.index(ident)])
@@ -280,7 +280,7 @@ while True:
 
         #Reporte de Asistencia 10
             elif opcion == 10: #Funciona igual que las calificaciones 
-                ident = input("Ingresa el identificador: ")
+                ident = input("Ingresa el identificador: ").upper()
                 if ident in nameList:
                     print("Reporte de asistencias del estudiante:", nameList[nameList.index(ident)], surList[nameList.index(ident)])
                     print("Sus asistencias son:", asisList[nameList.index(ident)])
