@@ -1,4 +1,3 @@
-
 nameList = ["Emiliano", "Allison", "Naomi", "Natalia", "Pedro", "Jose", "Diego", "Abril", "Grecia", "Misale", "Alberto", "Elias", "Angel"]
 surList = ["BECERRA", "FACIO", "JIMENEZ", "RODRIGUEZ", "GUTIERREZ", "VALENZUELA", "VIDRIO", "MORA", "VALDIVIA", "IBARRA", "ORNELAS", "ZEPEDA", "GRANADOS", "ALVAREZ"]
 codeList = ["224164515", "219439208", "220520973", "221925365", "221453145", "221568619", "224164513", "221964573", "216548448", "224164491", " 218466716", "220571586", " 218220776"]
@@ -6,10 +5,10 @@ pList = [80, 90, 90, 70, 50, 100, 85, 95, 77, 98, 50, 65, 79, 100] #Programació
 fList = [60, 100, 70, 80, 83, 100, 94, 65, 97, 85, 100, 90, 100, 100 ] #Física
 qList = [70, 80] #Química
 cList = [90, 70, 95, 73, 90, 100, 55, 69, 100, 100, 84, 89, 88, 90] #CB
-asisList = [15, 16] #Asistencia
-absList = [2, 1] #Faltas
+asisList = [15, 16, 20, 17, 19, 15, 15, 20, 18, 10, 20, 16, 20, 19] #Asistencia
+absList = [2, 1, 0, 1, 0, 3, 4, 1, 0, 0, 1, 1, 1, 0] #Faltas
 ageList = [19, 20, 22, 18, 18, 18, 19, 18, 24, 18, 21, 19, 22, 18] #Edad
-carList = ["LTBI", "LTBI"] #Carrera
+carList = ["LTBI", "LCD", "LDIA", "LCS", "LIF"] #Carrera
 # alberto-ornelas-patch-1
 
 borrar = str
