@@ -39,11 +39,11 @@ while True:
 
         #Agregar nuevo 1
             if opcion == 1:
-                nameList.append(str(input("Ingrese su nombre: "))) #Lo que hace esto es que va a guardar todo en la posición que sigue, en este caso 2.
-                surList.append(str(input("Ingrese su apellido: ")))
+                nameList.append(str(input("Ingrese su nombre: ")).upper) #Lo que hace esto es que va a guardar todo en la posición que sigue, en este caso 2.
+                surList.append(str(input("Ingrese su apellido: ")).upper)
                 codeList.append(str(input("Ingrese su código: ")))
                 ageList.append(str(input("Ingrese su edad: ")))
-                carList.append(str(input("Ingrese su carrera (LTBI, LCD, LDIA, LCS, LIF): ")))
+                carList.append(str(input("Ingrese su carrera (LTBI, LCD, LDIA, LCS, LIF): ")).upper)
                 pList.append(float(input("Ingrese su calificación de Programación 1: ")))
                 fList.append(float(input("Ingrese su calificación de Física: ")))
                 qList.append(float(input("Ingrese su calificación de Química: ")))
@@ -131,11 +131,11 @@ while True:
                 ident = input("Ingresa el identificador: ")
                 if ident in nameList: #Funciona igual en todos los programas
                     mod=nameList.index(ident)
-                    nameList[mod]=input(str("Ingrese nuevo nombre: ")) #Va a modificar todo lo de la posicón en la que esta el ident. Mod es una variable que se iguala a la posición en la
-                    surList[mod]=input(str("Ingrese nuevo apellido: ")) #que se encuentra el ident. Es decir, si el input esta en la posición 2, se van a modificar todas las listas
+                    nameList[mod]=input(str("Ingrese nuevo nombre: ").upper) #Va a modificar todo lo de la posicón en la que esta el ident. Mod es una variable que se iguala a la posición en la
+                    surList[mod]=input(str("Ingrese nuevo apellido: ").upper) #que se encuentra el ident. Es decir, si el input esta en la posición 2, se van a modificar todas las listas
                     codeList[mod]=input(str("Ingrese nuevo código: ")) #en la posición 2. Se va a modificar la carrera de la posición 2, el nombre de la posición 2 y todas las listas de la posición 2
                     ageList[mod]=input(int("Ingrese su nueva edad: "))
-                    carList[mod]=input(str("Ingrese su nueva carrera: "))
+                    carList[mod]=input(str("Ingrese su nueva carrera: ").upper)
                     pList[mod]=float(input("Ingrese nueva calificación de Programación 1: "))
                     fList[mod]=float(input("Ingrese nueva calificación de Física: "))
                     qList[mod]=float(input("Ingrese nueva calificación de Química: "))
@@ -144,11 +144,11 @@ while True:
                     absList[mod]=int(input("Ingrese nuevas faltas: "))
                 elif ident in surList:
                     mod=surList.index(ident)
-                    nameList[mod]=input(str("Ingrese nuevo nombre: ")) #Lo mismo, pero busca la posición en la lista de apellidos, es decir, si becerra esta en la posición 0, se van a modificar la posición 0 de todas las listas
-                    surList[mod]=input(str("Ingrese nuevo apellido: "))
+                    nameList[mod]=input(str("Ingrese nuevo nombre: ").upper) #Lo mismo, pero busca la posición en la lista de apellidos, es decir, si becerra esta en la posición 0, se van a modificar la posición 0 de todas las listas
+                    surList[mod]=input(str("Ingrese nuevo apellido: ").upper)
                     codeList[mod]=input(str("Ingrese nuevo código: "))
                     ageList[mod]=input(int("Ingrese su nueva edad: "))
-                    carList[mod]=input(str("Ingrese su nueva carrera: "))
+                    carList[mod]=input(str("Ingrese su nueva carrera: ").upper)
                     pList[mod]=float(input("Ingrese nueva calificación de Programación 1: "))
                     fList[mod]=float(input("Ingrese nueva calificación de Física: "))
                     qList[mod]=float(input("Ingrese nueva calificación de Química: "))
@@ -157,11 +157,11 @@ while True:
                     absList[mod]=int(input("Ingrese nuevas faltas: "))
                 elif ident in codeList:
                     mod=codeList.index(ident)
-                    nameList[mod]=input(str("Ingrese nuevo nombre: ")) #Lo mismo, pero en el código
-                    surList[mod]=input(str("Ingrese nuevo apellido: "))
+                    nameList[mod]=input(str("Ingrese nuevo nombre: ").upper) #Lo mismo, pero en el código
+                    surList[mod]=input(str("Ingrese nuevo apellido: ").upper)
                     codeList[mod]=input(str("Ingrese nuevo código: "))
                     ageList[mod]=input(int("Ingrese su nueva edad: "))
-                    carList[mod]=input(str("Ingrese su nueva carrera: "))
+                    carList[mod]=input(str("Ingrese su nueva carrera: ").upper)
                     pList[mod]=float(input("Ingrese nueva calificación de Programación 1: "))
                     fList[mod]=float(input("Ingrese nueva calificación de Física: "))
                     qList[mod]=float(input("Ingrese nueva calificación de Química: "))
