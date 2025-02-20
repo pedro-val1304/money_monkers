@@ -5,10 +5,10 @@ pList = [80, 90, 90, 70, 50, 100, 85, 95, 77, 98, 50, 65, 79, 100] #Programació
 fList = [60, 100, 70, 80, 83, 100, 94, 65, 97, 85, 100, 90, 100, 100 ] #Física
 qList = [70, 80, 100, 90, 100, 90, 100, 80, 100, 90, 100, 100, 90, 100] #Química
 cList = [90, 70, 95, 73, 90, 100, 55, 69, 100, 100, 84, 89, 88, 90] #CB
-asisList = [15, 16, 20, 17, 19, 15, 15, 20, 18, 10, 20, 16, 20, 19] #Asistencia
-absList = [5, 4, 0, 3, 1, 5, 5, 0, 2, 10, 0, 4, 0, 1] #Faltas
+asisList = [15, 36, 40, 33, 19, 5, 10, 34, 18, 20, 23, 26, 38, 39] #Asistencia
+absList = [25, 4, 0, 7, 21, 35, 30, 6, 22, 20, 17, 14, 2, 1] #Faltas
 ageList = [19, 20, 22, 18, 18, 18, 19, 18, 24, 18, 21, 19, 22, 18] #Edad
-carList = ["LTBI", "LCD", "LDIA", "LCS", "LIF"] #Carrera+
+carList = ["LTBI", "LTBI", "LTBI","LTBI","LTBI","LTBI","LTBI","LTBI","LTBI","LTBI","LTBI","LTBI","LTBI","LTBI",] #Carrera+
 # alberto-ornelas-patch-1
 
 borrar = str
