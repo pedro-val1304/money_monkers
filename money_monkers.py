@@ -301,15 +301,26 @@ while True:
                     print("Reporte de asistencias del estudiante:", nameList[nameList.index(ident)], surList[nameList.index(ident)])
                     print("Sus asistencias son:", asisList[nameList.index(ident)])
                     print("Sus faltas son:", absList[nameList.index(ident)])
+                    if absList[nameList.index(ident)] >= 6:
+                        print("El estudiante ha reprobado por faltas")
+                    else:
+                        print("El estudiante sigue en el curso")
                 elif ident in surList:
                     print("Reporte de asistencias del estudiante:", nameList[surList.index(ident)], surList[surList.index(ident)])
                     print("Sus asistencias son:", asisList[surList.index(ident)])
                     print("Sus faltas son:", absList[surList.index(ident)])
+                    if absList[nameList.index(ident)] >= 6:
+                        print("El estudiante ha reprobado por faltas")
+                    else:
+                        print("El estudiante sigue en el curso")
                 elif ident in codeList:
                     print("Reporte de asistencias del estudiante:", nameList[codeList.index(ident)], surList[codeList.index(ident)])
                     print("Sus asistencias son:", asisList[codeList.index(ident)])
                     print("Sus faltas son:", absList[codeList.index(ident)])
-
+                    if absList[nameList.index(ident)] >= 6:
+                        print("El estudiante ha reprobado por faltas")
+                    else:
+                        print("El estudiante sigue en el curso")
         #Cerrar
             elif opcion == 11:
                 print("¡Hasta luego!")
