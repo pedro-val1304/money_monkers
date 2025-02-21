@@ -8,8 +8,7 @@ cList = [90, 70, 95, 73, 90, 100, 55, 69, 100, 100, 84, 89, 88, 90] #CB
 asisList = [15, 36, 40, 33, 19, 5, 10, 34, 18, 20, 23, 26, 38, 39] #Asistencia
 absList = [25, 4, 0, 7, 21, 35, 30, 6, 22, 20, 17, 14, 2, 1] #Faltas
 ageList = [19, 20, 22, 18, 18, 18, 19, 18, 24, 18, 21, 19, 22, 18] #Edad
-carList = ["LTBI", "LTBI", "LTBI","LTBI","LTBI","LTBI","LTBI","LTBI","LTBI","LTBI","LTBI","LTBI","LTBI","LTBI",] #Carrera+
-# alberto-ornelas-patch-1
+carList = ["LTBI", "LTBI", "LTBI","LTBI","LTBI","LTBI","LTBI","LTBI","LTBI","LTBI","LTBI","LTBI","LTBI","LTBI",] #Carrera
 
 borrar = str
 caP = float
