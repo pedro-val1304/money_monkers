@@ -10,6 +10,7 @@ absList = [25, 4, 0, 7, 21, 35, 30, 6, 22, 20, 17, 14, 2, 1] #Faltas
 ageList = [19, 20, 22, 18, 18, 18, 19, 18, 24, 18, 21, 19, 22, 18] #Edad
 carList = ["LTBI", "LTBI", "LTBI","LTBI","LTBI","LTBI","LTBI","LTBI","LTBI","LTBI","LTBI","LTBI","LTBI","LTBI",] #Carrera
 
+#Variables para cuando agregamos calificaciones o borramos a alguien
 borrar = str
 caP = float
 caf = float
@@ -19,6 +20,7 @@ med = float
 mod = int
 asis = int
 
+#Loop while True, mientras que no escogemos la opción de salir.
 while True:
     try:
         try:
@@ -38,22 +40,22 @@ while True:
 
         #Agregar nuevo 1
             if opcion == 1:
-                nameList.append(str(input("Ingrese su nombre: ")).upper()) #Lo que hace esto es que va a guardar todo en la posición que sigue, en este caso 2.
-                surList.append(str(input("Ingrese su apellido: ")).upper())
+                nameList.append(str(input("Ingrese su nombre: ")).upper()) #Lo que hace esto es que va a guardar todo en la posición que sigue, esa es la función de .append
+                surList.append(str(input("Ingrese su apellido: ")).upper()) # .upper hace que el valor sin importar como lo escriban se registre en mayúsculas nomas.
                 codeList.append(str(input("Ingrese su código: ")))
                 ageList.append(str(input("Ingrese su edad: ")))
                 carList.append(str(input("Ingrese su carrera (LTBI, LCD, LDIA, LCS, LIF): ")).upper())
-                pList.append(float(input("Ingrese su calificación de Programación 1: ")))
-                fList.append(float(input("Ingrese su calificación de Física: ")))
-                qList.append(float(input("Ingrese su calificación de Química: ")))
-                cList.append(float(input("Ingrese su calificación de Ciencias Biológicas: ")))
-                asisList.append(int(input("Ingrese las asistencias del estudiante: ")))
+                pList.append(float(input("Ingrese su calificación de Programación 1 (0 - 100): ")))
+                fList.append(float(input("Ingrese su calificación de Física (0 - 100): ")))
+                qList.append(float(input("Ingrese su calificación de Química (0 - 100): ")))
+                cList.append(float(input("Ingrese su calificación de Ciencias Biológicas (0 - 100): ")))
+                asisList.append(int(input("Ingrese las asistencias del estudiante (0 - 100): ")))
                 absList.append(int(input("Ingrese las faltas del estudiante: ")))
 
         #Identificar 2
             elif opcion == 2:
-                ident = input("Ingresa el identificador: ").upper()
-                if ident in nameList:
+                ident = input("Ingresa el identificador: ").upper() #ident es la variable que es un identificador, puede ser nombre, apellido, codigo.
+                if ident in nameList: # Si esta en el nombre
                      print("Su nombre es:", nameList[nameList.index(ident)]) #nameList[nameList.index(ident)] Hace que en la lista de nombres se imprima el de la posición del nombre o código que se pone
                      print("Su apellido es:", surList[nameList.index(ident)]) #ident es la variable que se utiliza para saber la posición en la que está el input. Osea, allison es la posición 1
                      print("Su código es:", codeList[nameList.index(ident)]) # entonces se va a imprimir todo lo de las bases de datos de la posición 1
@@ -80,7 +82,7 @@ while True:
                 if ident in nameList: #Si el input esta en la lista de nombres, entonces arrancar el programa
                     print("El estudiante:", nameList[nameList.index(ident)], surList[nameList.index(ident)], "ha sido borrado")
                     borrar = nameList.index(ident) #Esta variable se iguala al de la posición de la lista en la que ident se encuentra, es decir. Si ident encuentra a Emiliano en la posición 0, borrar sera igual a 0 y por ende borrara todos los valores de toda la lista en la posición 0
-                    nameList.pop(borrar)
+                    nameList.pop(borrar) #.pop es para borrar en la lista, justamnete usando borrar coo
                     surList.pop(borrar)
                     codeList.pop(borrar)
                     pList.pop(borrar)
@@ -135,10 +137,10 @@ while True:
                     codeList[mod]=input(str("Ingrese nuevo código: ")) #en la posición 2. Se va a modificar la carrera de la posición 2, el nombre de la posición 2 y todas las listas de la posición 2
                     ageList[mod]=input(int("Ingrese su nueva edad: "))
                     carList[mod]=input(str("Ingrese su nueva carrera: ").upper())
-                    pList[mod]=float(input("Ingrese nueva calificación de Programación 1: "))
-                    fList[mod]=float(input("Ingrese nueva calificación de Física: "))
-                    qList[mod]=float(input("Ingrese nueva calificación de Química: "))
-                    cList[mod]=float(input("Ingrese nueva calificación de Biología: "))
+                    pList[mod]=float(input("Ingrese nueva calificación de Programación 1 (0 - 100):  "))
+                    fList[mod]=float(input("Ingrese nueva calificación de Física (0 - 100): "))
+                    qList[mod]=float(input("Ingrese nueva calificación de Química (0 - 100): "))
+                    cList[mod]=float(input("Ingrese nueva calificación de Biología (0 - 100): "))
                     asisList[mod]=int(input("Ingrese nuevas asistencias: "))
                     absList[mod]=int(input("Ingrese nuevas faltas: "))
                 elif ident in surList:
@@ -148,10 +150,10 @@ while True:
                     codeList[mod]=input(str("Ingrese nuevo código: "))
                     ageList[mod]=input(int("Ingrese su nueva edad: "))
                     carList[mod]=input(str("Ingrese su nueva carrera: ").upper())
-                    pList[mod]=float(input("Ingrese nueva calificación de Programación 1: "))
-                    fList[mod]=float(input("Ingrese nueva calificación de Física: "))
-                    qList[mod]=float(input("Ingrese nueva calificación de Química: "))
-                    cList[mod]=float(input("Ingrese nueva calificación de Biología: "))
+                    pList[mod]=float(input("Ingrese nueva calificación de Programación 1 (0 - 100): "))
+                    fList[mod]=float(input("Ingrese nueva calificación de Física (0 - 100): "))
+                    qList[mod]=float(input("Ingrese nueva calificación de Química (0 - 100): "))
+                    cList[mod]=float(input("Ingrese nueva calificación de Biología (0 - 100): "))
                     asisList[mod]=int(input("Ingrese nuevas asistencias: "))
                     absList[mod]=int(input("Ingrese nuevas faltas: "))
                 elif ident in codeList:
@@ -161,10 +163,10 @@ while True:
                     codeList[mod]=input(str("Ingrese nuevo código: "))
                     ageList[mod]=input(int("Ingrese su nueva edad: "))
                     carList[mod]=input(str("Ingrese su nueva carrera: ").upper())
-                    pList[mod]=float(input("Ingrese nueva calificación de Programación 1: "))
-                    fList[mod]=float(input("Ingrese nueva calificación de Física: "))
-                    qList[mod]=float(input("Ingrese nueva calificación de Química: "))
-                    cList[mod]=float(input("Ingrese nueva calificación de Biología: "))
+                    pList[mod]=float(input("Ingrese nueva calificación de Programación 1 (0 - 100): "))
+                    fList[mod]=float(input("Ingrese nueva calificación de Física (0 - 100): "))
+                    qList[mod]=float(input("Ingrese nueva calificación de Química (0 - 100): "))
+                    cList[mod]=float(input("Ingrese nueva calificación de Biología (0 - 100): "))
                     asisList[mod]=int(input("Ingrese nuevas asistencias: "))
                     absList[mod]=int(input("Ingrese nuevas faltas: "))
                 else:
@@ -172,7 +174,7 @@ while True:
 
         #Lista de estudiantes 5
             elif opcion == 5:
-                nombre_completo = [f"{nombre} {apellido}" for nombre, apellido in zip(nameList, surList)]
+                nombre_completo = [f"{nombre} {apellido}" for nombre, apellido in zip(nameList, surList)] #nombre_completo es una lista anidada que muestra en paralelo.
                 print(nombre_completo)
                 
         #Almacenar calificaciones 6
@@ -181,24 +183,24 @@ while True:
                 if ident in nameList:
                     mod=nameList.index(ident) #Es una variable que se va a igualar a la posición en la que ident encuentre a su simil. Es decir, el usuario pone Emiliano, Emiliano en la lista esta en la posición 0. Mod se va a igualar a 0
                     print("Almacenando calificaciones del estudiante:", nameList[nameList.index(ident)], surList[nameList.index(ident)])
-                    pList[mod]=float(input("Ingrese nueva calificación de Programación 1: ")) #Va a almacenar las calificación en la posición en la que ident encuentre en la base de datos, es decir, va a modificar todas las posiciones 0 si ident esta en la posición 0
-                    fList[mod]=float(input("Ingrese nueva calificación de Física: "))
-                    qList[mod]=float(input("Ingrese nueva calificación de Química: "))
-                    cList[mod]=float(input("Ingrese nueva calificación de Biología: "))
+                    pList[mod]=float(input("Ingrese nueva calificación de Programación 1 (0 - 100): ")) #Va a almacenar las calificación en la posición en la que ident encuentre en la base de datos, es decir, va a modificar todas las posiciones 0 si ident esta en la posición 0
+                    fList[mod]=float(input("Ingrese nueva calificación de Física (0 - 100): "))
+                    qList[mod]=float(input("Ingrese nueva calificación de Química (0 - 100): "))
+                    cList[mod]=float(input("Ingrese nueva calificación de Biología (0 - 100): "))
                 elif ident in surList:
                     mod=surList.index(ident)
                     print("Almacenando calificaciones del estudiante:", nameList[surList.index(ident)], surList[surList.index(ident)])
-                    pList[mod]=float(input("Ingrese nueva calificación de Programación 1: "))
-                    fList[mod]=float(input("Ingrese nueva calificación de Física: "))
-                    qList[mod]=float(input("Ingrese nueva calificación de Química: "))
-                    cList[mod]=float(input("Ingrese nueva calificación de Biología: "))
+                    pList[mod]=float(input("Ingrese nueva calificación de Programación 1 (0 - 100): "))
+                    fList[mod]=float(input("Ingrese nueva calificación de Física (0 - 100): "))
+                    qList[mod]=float(input("Ingrese nueva calificación de Química (0 - 100): "))
+                    cList[mod]=float(input("Ingrese nueva calificación de Biología (0 - 100): "))
                 elif ident in codeList:
                     mod=codeList.index(ident)
                     print("Almacenando calificaciones del estudiante:", nameList[codeList.index(ident)], surList[codeList.index(ident)])
-                    pList[mod]=float(input("Ingrese nueva calificación de Programación 1: "))
-                    fList[mod]=float(input("Ingrese nueva calificación de Física: "))
-                    qList[mod]=float(input("Ingrese nueva calificación de Química: "))
-                    cList[mod]=float(input("Ingrese nueva calificación de Biología: "))
+                    pList[mod]=float(input("Ingrese nueva calificación de Programación 1 (0 - 100): "))
+                    fList[mod]=float(input("Ingrese nueva calificación de Física (0 - 100): "))
+                    qList[mod]=float(input("Ingrese nueva calificación de Química (0 - 100): "))
+                    cList[mod]=float(input("Ingrese nueva calificación de Biología (0 - 100): "))
                 else:
                     print("El estudiante no se encuentra en la lista")
                     
