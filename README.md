@@ -25,9 +25,10 @@ Nada ya acabamos :)
 - **Grecia Daniela Valdivia Rubio** → Diagrama de flujo y lista de datos de Apellidos.
 - **Naomi Jiménez Toscano** → Diagrama de flujo y lista de Nombres y Calificaciones.
 - **Gloria Millet Velázquez Álvarez** → Base de datos de estudiantes y diagrama de flujo.
-- **Alberto Ornelas** → Diagrama de flujo y base de datos.
+- **José Alberto Ornelas** → Diagrama de flujo y base de datos.
 - **Allison Magaly Sánchez Facio** → Diagrama de flujo y tester.
 - **Natalia Vanessa Rodríguez Cervantes** → Diagrama de flujo y lista de asistencias / ausencias.
 - **Diego Nicolás Vidrio Machuca** → Diagrama de flujo.
 - **Ángel Gabriel Granados Ortiz** → Diagrama de flujo.
 - **Abril Quetzali Mora Valdez** → Diagrama de flujo.
+- **Xander Elías Zepeda Alcaraz** → Diagrama de flujo y lista de calificaciones.
