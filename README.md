@@ -20,8 +20,8 @@ Nada ya acabamos :)
 ## Integrantes del equipo y su rol
 - **José Pedro Valenzuela López** → Diseñador del GitHub y manager
 - **Emiliano Becerra López** → Programador base.
-- **Misael** → Programador correcciones.
-- **Pedro Daniel** → Programador sobre pequeños detalles / mejorar interacción.
+- **Misael Alejandro Ibarra Padilla** → Programador base.
+- **Pedro Daniel Gutiérrez Pérez** → Programador sobre pequeños detalles / mejorar interacción. Inicio del programa.
 - **Grecia Daniela Valdivia Rubio** → Diagrama de flujo y lista de datos de Apellidos.
 - **Naomi Jiménez Toscano** → Diagrama de flujo y lista de Nombres y Calificaciones.
 - **Gloria Millet Velázquez Álvarez** → Base de datos de estudiantes y diagrama de flujo.
