@@ -258,40 +258,40 @@ while True:
                     print("El estudiante no se encuentra en la lista")
 
         # Asistencia 9
-        elif opcion == 9:
-            ident = input("Ingresa el identificador: ")
-            if ident in nameList:
-                asis = nameList.index(ident)
-                print("Almacenando asistencias del estudiante:", nameList[nameList.index(ident)], surList[nameList.index(ident)])
-                asistencias = int(input("Ingrese nuevas asistencias: "))
-                inasistencias = int(input("Ingrese nuevas faltas: "))
-                if asistencias <= 40 and inasistencias <= 6:
-                    asisList[asis] = asistencias
-                    absList[asis] = inasistencias
+            elif opcion == 9:
+                ident = input("Ingresa el identificador: ")
+                if ident in nameList:
+                    asis = nameList.index(ident)
+                    print("Almacenando asistencias del estudiante:", nameList[nameList.index(ident)], surList[nameList.index(ident)])
+                    asistencias = int(input("Ingrese nuevas asistencias: "))
+                    inasistencias = int(input("Ingrese nuevas faltas: "))
+                    if asistencias <= 40 and inasistencias <= 6:
+                        asisList[asis] = asistencias
+                        absList[asis] = inasistencias
+                    else:
+                        print("El límite de asistencias es 40 y el de inasistencias es 6.")
+                elif ident in surList:
+                    asis = surList.index(ident)
+                    print("Almacenando asistencias del estudiante:", nameList[surList.index(ident)], surList[surList.index(ident)])
+                    asistencias = int(input("Ingrese nuevas asistencias: "))
+                    inasistencias = int(input("Ingrese nuevas faltas: "))
+                    if asistencias <= 40 and inasistencias <= 6:
+                        asisList[asis] = asistencias
+                        absList[asis] = inasistencias
+                    else:
+                        print("El límite de asistencias es 40 y el de inasistencias es 6.")
+                elif ident in codeList:
+                    asis = codeList.index(ident)
+                    print("Almacenando asistencias del estudiante:", nameList[codeList.index(ident)], surList[codeList.index(ident)])
+                    asistencias = int(input("Ingrese nuevas asistencias: "))
+                    inasistencias = int(input("Ingrese nuevas faltas: "))
+                    if asistencias <= 40 and inasistencias <= 6:
+                        asisList[asis] = asistencias
+                        absList[asis] = input
+                    else:
+                        print("El límite de asistencias es 40 y el de inasistencias es 6.")
                 else:
-                    print("El límite de asistencias es 40 y el de inasistencias es 6.")
-            elif ident in surList:
-                asis = surList.index(ident)
-                print("Almacenando asistencias del estudiante:", nameList[surList.index(ident)], surList[surList.index(ident)])
-                asistencias = int(input("Ingrese nuevas asistencias: "))
-                inasistencias = int(input("Ingrese nuevas faltas: "))
-                if asistencias <= 40 and inasistencias <= 6:
-                    asisList[asis] = asistencias
-                    absList[asis] = inasistencias
-                else:
-                    print("El límite de asistencias es 40 y el de inasistencias es 6.")
-            elif ident in codeList:
-                asis = codeList.index(ident)
-                print("Almacenando asistencias del estudiante:", nameList[codeList.index(ident)], surList[codeList.index(ident)])
-                asistencias = int(input("Ingrese nuevas asistencias: "))
-                inasistencias = int(input("Ingrese nuevas faltas: "))
-                if asistencias <= 40 and inasistencias <= 6:
-                    asisList[asis] = asistencias
-                    absList[asis] = inasistencias
-                else:
-                    print("El límite de asistencias es 40 y el de inasistencias es 6.")
-            else:
-                print("El estudiante no se encuentra en la lista")
+                    print("El estudiante no se encuentra en la lista")
 
         #Reporte de Asistencia 10
             elif opcion == 10: #Funciona igual que las calificaciones 
