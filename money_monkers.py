@@ -260,13 +260,13 @@ while True:
 
         # Asistencia 9
             elif opcion == 9:
-                ident = input("Ingresa el identificador: ")
+                ident = input("Ingresa el identificador: ").upper()
                 if ident in nameList:
                     asis = nameList.index(ident)
                     print("Almacenando asistencias del estudiante:", nameList[nameList.index(ident)], surList[nameList.index(ident)])
                     asistencias = int(input("Ingrese nuevas asistencias: "))
                     inasistencias = int(input("Ingrese nuevas faltas: "))
-                    if asistencias <= 40 and inasistencias <= 6:
+                    if asistencias+inasistencias <= 40:
                         asisList[asis] = asistencias
                         absList[asis] = inasistencias
                     else:
@@ -276,7 +276,7 @@ while True:
                     print("Almacenando asistencias del estudiante:", nameList[surList.index(ident)], surList[surList.index(ident)])
                     asistencias = int(input("Ingrese nuevas asistencias: "))
                     inasistencias = int(input("Ingrese nuevas faltas: "))
-                    if asistencias <= 40 and inasistencias <= 6:
+                    if asistencias+inasistencias <= 40:
                         asisList[asis] = asistencias
                         absList[asis] = inasistencias
                     else:
@@ -286,9 +286,9 @@ while True:
                     print("Almacenando asistencias del estudiante:", nameList[codeList.index(ident)], surList[codeList.index(ident)])
                     asistencias = int(input("Ingrese nuevas asistencias: "))
                     inasistencias = int(input("Ingrese nuevas faltas: "))
-                    if asistencias <= 40 and inasistencias <= 6:
+                    if asistencias+inasistencias <= 40:
                         asisList[asis] = asistencias
-                        absList[asis] = input
+                        absList[asis] = inasistencias
                     else:
                         print("El límite de asistencias es 40 y el de inasistencias es 6.")
                 else:
