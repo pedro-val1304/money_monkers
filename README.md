@@ -10,27 +10,24 @@ Repositorio para almacenar y tener un historial de versiones del código para Pr
 5. **Modificar** la información de un **estudiante existente**.
 6. **Mostrar** una **lista** con todos los estudiantes actualmente registrados en el sistema.
 7. **Almacenar y mostrar _notas_** de cada estudiante en cada asignatura.  
-
-   > **Duda sobre el punto 7:**  
-   > - ¿Debe buscarse por estudiante para mostrar sus calificaciones?  
-   > - ¿O debe buscarse por materia y mostrar las calificaciones de todos los estudiantes?  
-
 8. **Promediar _notas_** de un estudiante en específico.
 9. Generar un **reporte de _notas_** de un estudiante en específico.
 10. Generar un **reporte de _asistencia_** de un estudiante en específico.
 
 ## ¿Qué hacer por ahora?  
-- En la parte del **código**, debemos desarrollar el **MENÚ PRINCIPAL** para ejecutar las acciones.
-- Empezar a realizar **las primeras opciones** del menú.
-- Definir sí vamos a usar **listas o diccionarios**.
+Nada ya acabamos :)
 
 ## Integrantes del equipo y su rol
 - **José Pedro Valenzuela López** → Diseñador del GitHub y manager
-- **Emiliano Becerra** → Diagrama de flujo
-- **Grecia Daniela Valdivia Rubio** → Diagrama de flujo
-- **Naomi Jiménez Toscano** → Diagrama de flujo
-- **Pedro Daniel** → Programador del menú principal
-- **Misael** → Programador de almacenamiento de calificaciones
-- **Gloria Millet** → Base de datos de estudiantes
-- **Alberto Ornelas** → Diagrama de flujo
-- **Allison Magaly Sanchez Facio** → Diagrama de flujo
+- **Emiliano Becerra López** → Programador base.
+- **Misael** → Programador correcciones.
+- **Pedro Daniel** → Programador sobre pequeños detalles / mejorar interacción.
+- **Grecia Daniela Valdivia Rubio** → Diagrama de flujo y lista de datos de Apellidos.
+- **Naomi Jiménez Toscano** → Diagrama de flujo y lista de Nombres y Calificaciones.
+- **Gloria Millet Velázquez Álvarez** → Base de datos de estudiantes y diagrama de flujo.
+- **Alberto Ornelas** → Diagrama de flujo y base de datos.
+- **Allison Magaly Sánchez Facio** → Diagrama de flujo y tester.
+- **Natalia Vanessa Rodríguez Cervantes** → Diagrama de flujo y lista de asistencias / ausencias.
+- **Diego Nicolás Vidrio Machuca** → Diagrama de flujo.
+- **Ángel Gabriel Granados Ortiz** → Diagrama de flujo.
+- **Abril Quetzali Mora Valdez** → Diagrama de flujo.
